@@ -1,88 +1,88 @@
-#include "hik_camera/hik_camera_node.hpp"
+#include # include“hik_camera / hik_camera_node.hpp”# include“hik_camera / hik_camera_node.hpp”# include“hik_camera / hik_camera_node.hpp”"“hik_camera / hik_camera_node.hpp   高压泵”hik_camera/hik_camera_node.hpp   高压泵"
 
-using namespace std::chrono_literals;
+using   使用 使用命名空间std::chrono_literals；使用命名空间std::chrono_literals；使用命名空间std::chrono_literals；namespace   名称空间 std::chrono_literals;
 
-HikCameraNode::HikCameraNode(const rclcpp::NodeOptions & options)
-: Node("hik_camera_node", options),
+HikCameraNode::（（const   常量 rclcpp::NodeOptions & options   选项）const   常量 rclcpp::NodeOptions & options   选项）HikCameraNode（const   常量 rclcpp::NodeOptions & options   选项）(const   常量 rclcpp::NodeOptions & options)
+: ： Node   节点： Node： Node   节点("hik_camera_node   “hik_camera_node”", options   选项)，("hik_camera_node   “hik_camera_node”", options   选项)，("hik_camera_node   “hik_camera_node”", options   选项)，Node("hik_camera_node   “hik_camera_node”"   “hik_camera_node”, options   选项),
   camera_handle_(nullptr),
-  is_grabbing_(false)
+        is_grabbing_(假)is_grabbing_(假)is_grabbing_   is_grabbing_(假)(false   假   假)
 {
     // 声明参数
-    this->declare_parameter("camera_name", "hik_camera");
-    this->declare_parameter("camera_ip", "192.168.1.10");
-    this->declare_parameter("camera_serial", "");
-    this->declare_parameter("frame_rate", 30.0);
-    this->declare_parameter("exposure_time", 10000.0);
-    this->declare_parameter("gain", 5.0);
-    this->declare_parameter("pixel_format", "BGR8");
-    this->declare_parameter("camera_info_url", "");
+    ——> ——> ——> declare_parameter(“camera_name”、“hik_camera”);declare_parameter(“camera_name”、“hik_camera”);declare_parameter(“camera_name”、“hik_camera”);this   这->declare_parameter("camera_name"   “camera_name”, "   “hik_camera”hik_camera");
+    ——> ——> ——> declare_parameter(“camera_ip”、“192.168.1.10”);declare_parameter(“camera_ip”、“192.168.1.10”);declare_parameter(“camera_ip”、“192.168.1.10”);this   这->declare_parameter("camera_ip"   “camera_ip”, "192.168.1.10");
+    ——> ——> ——> declare_parameter(“camera_serial”、" ");declare_parameter(“camera_serial”、" ");declare_parameter(“camera_serial”、" ");this   这->declare_parameter("camera_serial"   “camera_serial”, "");
+    ——> declare_parameter(“frame_rate”,30.0);this->declare_parameter("   “frame_rate”frame_rate", 30.0);
+    ——> ——> ——> declare_parameter(“exposure_time”,10000.0);declare_parameter(“exposure_time”,10000.0);declare_parameter(“exposure_time”,10000.0);this   这->declare_parameter("exposure_time"   “exposure_time”, 10000.0);
+    ——> declare_parameter(“获得”,5.0);this->declare_parameter("   “获得”gain", 5.0);
+    ——> ——> ——> declare_parameter(“pixel_format”、“BGR8”);declare_parameter(“pixel_format”、“BGR8”);declare_parameter(“pixel_format”、“BGR8”);this   这->declare_parameter("pixel_format"   “pixel_format”, "BGR8");
+    ——> declare_parameter(“camera_info_url”、" ");this->declare_parameter("   “camera_info_url”camera_info_url", "");
     
     // 获取参数
-    this->get_parameter("camera_name", camera_name_);
-    this->get_parameter("camera_ip", camera_ip_);
-    this->get_parameter("camera_serial", camera_serial_);
-    this->get_parameter("frame_rate", frame_rate_);
-    this->get_parameter("exposure_time", exposure_time_);
-    this->get_parameter("gain", gain_);
-    this->get_parameter("pixel_format", pixel_format_);
-    this->get_parameter("camera_info_url", camera_info_url_);
+    ——> ——> ——> get_parameter(“camera_name”,camera_name_);get_parameter(“camera_name”,camera_name_);get_parameter(“camera_name”,camera_name_);this   这->get_parameter("camera_name"   “camera_name”, camera_name_);
+    ——> get_parameter(“camera_ip”,camera_ip_);this->get_parameter("   “camera_ip”camera_ip", camera_ip_);
+    ——> ——> ——> get_parameter(“camera_serial”,camera_serial_);get_parameter(“camera_serial”,camera_serial_);get_parameter(“camera_serial”,camera_serial_);this   这->get_parameter("camera_serial"   “camera_serial”, camera_serial_);
+    ——> get_parameter(“frame_rate”,frame_rate_);this->get_parameter("   “frame_rate”frame_rate", frame_rate_);
+    ——> ——> ——> get_parameter(“exposure_time”,exposure_time_);get_parameter(“exposure_time”,exposure_time_);get_parameter(“exposure_time”,exposure_time_);this   这->get_parameter("exposure_time"   “exposure_time”, exposure_time_);
+    ——> get_parameter(“获得”,gain_);this->get_parameter("   “获得”gain", gain_);
+    ————> get_parameter(“pixel_format”,pixel_format_);> get_parameter(“pixel_format”,pixel_format_);this   这->get_parameter("pixel_format"   “pixel_format”, pixel_format_);
+    ——> get_parameter(“camera_info_url”,camera_info_url_);this->get_parameter("   “camera_info_url”camera_info_url", camera_info_url_);
     
-    RCLCPP_INFO(this->get_logger(), "camera_ip: %s", camera_ip_.c_str());
-    RCLCPP_INFO(this->get_logger(), "camera_serial: %s", camera_serial_.c_str());
-    RCLCPP_INFO(this->get_logger(), "exposure_time: %f", exposure_time_);
-    RCLCPP_INFO(this->get_logger(), "gain: %f", gain_);
-    RCLCPP_INFO(this->get_logger(), "frame_rate: %f", frame_rate_);
+    RCLCPP_INFORCLCPP_INFORCLCPP_INFO(这- > get_logger(),“camera_ip: % s camera_ip_.c_str ());(这- > get_logger(),“camera_ip: % s camera_ip_.c_str ());(this   这->get_logger(), "camera_ip: %s"   “camera_ip: % s”, camera_ip_.c_str());
+    RCLCPP_INFORCLCPP_INFORCLCPP_INFO(this   这->get_logger(), "camera_serial: %s"   “camera_serial: % s”, camera_serial_c_str ())；(this   这->get_logger(), "camera_serial: %s"   “camera_serial: % s”, camera_serial_c_str ())；(this   这   这->get_logger(), "camera_serial: %s"   “camera_serial: % s”, camera_serial_.c_str());
+    RCLCPP_INFORCLCPP_INFORCLCPP_INFO(this   这->get_logger()，“exposure_time: %f”，exposure_time)；(this   这->get_logger()，“exposure_time: %f”，exposure_time)；(this   这->get_logger(), "exposure_time: %f"   “exposure_time: % f”, exposure_time_);
+    RCLCPP_INFORCLCPP_INFO(这- > get_logger(),“获得:% f”,gain_);(this->get_logger(), "   “获得:% f”gain: %f", gain_);
+    RCLCPP_INFORCLCPP_INFO（RCLCPP_INFO（this   这->get_logger()，“帧率：%f”，帧率）；this   这->get_logger()，“帧率：%f”，帧率）；(this   这->get_logger(), "frame_rate: %f"   “frame_rate: % f”, frame_rate_);
 
-    initialize_timer_ = this->create_wall_timer(
-        100ms, std::bind(&HikCameraNode::initialize, this));
+    initialize_timer_ = Initialize_timer_ = Initialize_timer_ = Initialize_timer_ = this   这->this   这->this   这->this   这->create_wall_timer(
+        100ms, std::bind(&HikCameraNode::initialize, this));100ms, std::bind   绑定(&HikCameraNode::initialize, this   这))；
 }
 
-void HikCameraNode::initialize()
+void HikCameraNode::initialize   初始化()空白HikCameraNode:初始化()
 {
-    initialize_timer_->cancel();
+    initialize_timer_->cancel();initialize_timer_ - >取消();
 
     // 初始化图像传输
-    image_transport_ = std::make_shared<image_transport::ImageTransport>(shared_from_this());
+    image_transport_ = std::make_shared<image_transport::ImageTransport>(shared_from_this());image_transport = std::make_shared(shared_from_this())；
 
     // 初始化camera_info_manager
-    camera_info_manager_ = std::make_shared<camera_info_manager::CameraInfoManager>(this, camera_name_, camera_info_url_);
+    camera_info_manager_ = std::make_shared<camera_info_manager::CameraInfoManager>(this, camera_name_, camera_info_url_);camera_info_manager_ = std::make_shared(this   这, camera_name_, camera_info_url_)；
     
     // 创建相机发布器
-    camera_pub_ = image_transport_->advertiseCamera("image_raw", 10);
+    camera_pub_ = image_transport_->advertiseCamera("image_raw", 10);camera_pub_ = image_transport_->advertiseCamera("image_raw"   “image_raw”, 10)；
     
     // 设置参数回调
-    param_callback_handle_ = this->add_on_set_parameters_callback(
-        std::bind(&HikCameraNode::parameters_callback, this, std::placeholders::_1));
+    param_callback_handle_ = this->add_on_set_parameters_callback(参数回调函数(
+        std::bind(&HikCameraNode::parameters_callback, this, std::placeholders::_1));std::bind   绑定(&HikCameraNode::parameters_callback, this   这, std::placeholders::_1))；
 
-    if (initialize_camera()) {
-        RCLCPP_INFO(this->get_logger(), "Camera initialized successfully");
+    if (initialize_camera()) {   If (initialize_camera()) {
+        RCLCPP_INFO(this->get_logger(), "Camera initialized successfully");RCLCPP_INFO（this   这->get_logger(), “相机初始化成功”）；
         start_grabbing();
     }
-    else {
-        RCLCPP_ERROR(this->get_logger(), "Failed to initialize camera");
-        rclcpp::shutdown();
+    else {   其他{
+        RCLCPP_ERROR(this->get_logger(), "Failed to initialize camera");RCLCPP_ERROR（this   这->get_logger()，“初始化相机失败”）；
+        rclcpp::shutdown();   rclcpp:关闭();
     }
 }
 
 HikCameraNode::~HikCameraNode()
 {
     stop_grabbing();
-    if (camera_handle_) {
+    if (camera_handle_) {   If (camera_handle_) {
         MV_CC_DestroyHandle(camera_handle_);
-        camera_handle_ = nullptr;
+        camera_handle_ = nullptr;   Camera_handle_ = nullptr；
     }
 }
 
 
-bool HikCameraNode::initialize_camera()
+bool HikCameraNode::initialize_camera()bool   保龄球 HikCameraNode: initialize_camera ()
 {
     int nRet = MV_OK;
     
     MV_CC_DEVICE_INFO_LIST stDeviceList;
-    memset(&stDeviceList, 0, sizeof(MV_CC_DEVICE_INFO_LIST));
+    memset(&stDeviceList, 0, sizeof(MV_CC_DEVICE_INFO_LIST));memset(&stDeviceList, 0, sizeof(MV_CC_DEVICE_INFO_LIST))；
     
     // 枚举设备
-    nRet = MV_CC_EnumDevices(MV_GIGE_DEVICE | MV_USB_DEVICE, &stDeviceList);
+    nRet = MV_CC_EnumDevices(MV_GIGE_DEVICE | MV_USB_DEVICE, &stDeviceList);nRet = MV_CC_EnumDevices(MV_GIGE_DEVICE | MV_USB_DEVICE, &stDeviceList)；
     if (MV_OK != nRet) {
         RCLCPP_ERROR(this->get_logger(), "Enum Devices fail! nRet [0x%x]", nRet);
         return false;
@@ -184,17 +184,6 @@ bool HikCameraNode::set_camera_parameters()
     if (MV_OK != nRet) {
         RCLCPP_WARN(this->get_logger(), "Set ExposureTime fail! nRet [0x%x]", nRet);
     }
-
-    // 设置分辨率
-/*     nRet = MV_CC_SetIntValue(camera_handle_, "Width", 640);
-    if (MV_OK != nRet) {
-        RCLCPP_WARN(this->get_logger(), "Set Width fail! nRet [0x%x]", nRet);
-    }
-
-    nRet = MV_CC_SetIntValue(camera_handle_, "Height", 480);
-    if (MV_OK != nRet) {
-        RCLCPP_WARN(this->get_logger(), "Set Height fail! nRet [0x%x]", nRet);
-    } */
     
     // 设置增益
     nRet = MV_CC_SetFloatValue(camera_handle_, "Gain", gain_);
