@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.000567] (hik_camera) JobQueued: {'identifier': 'hik_camera', 'dependencies': OrderedDict()}
+[0.000766] (hik_camera) JobStarted: {'identifier': 'hik_camera'}
+[0.009604] (hik_camera) JobProgress: {'identifier': 'hik_camera', 'progress': 'cmake'}
+[0.011811] (hik_camera) JobProgress: {'identifier': 'hik_camera', 'progress': 'build'}
+[0.012124] (hik_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/danny/hik_ros2_task4/build/hik_camera', '--', '-j28', '-l28'], 'cwd': '/home/danny/hik_ros2_task4/build/hik_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'danny'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/danny'), ('OLDPWD', '/home/danny/hik_ros2_task4'), ('CHROME_DESKTOP', 'code.desktop'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ZSH', '/home/danny/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('MANAGERPID', '1513'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1657'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/danny/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '87433'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/danny/ros2_ws/install'), ('LOGNAME', 'danny'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:8269'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/home/danny'), ('USERNAME', 'danny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ZSH_ROS2_INSTALL_PATH', '/opt/ros/humble'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/danny/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/danny/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/danny-Legion-Y7000P-IRX9:@/tmp/.ICE-unix/1610,unix/danny-Legion-Y7000P-IRX9:/tmp/.ICE-unix/1610'), ('INVOCATION_ID', 'd884050c09674dcdab1a544908cef55d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/danny/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c1876577f697b2c2.txt'), ('PYTHONSTARTUP', '/home/danny/.config/Code/User/workspaceStorage/6c7bb7d603de6d705c1267f291035126/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1UYDE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3f4c20898b.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/home/danny/ros2_ws/install/my_first_sub:/home/danny/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/danny/hik_ros2_task4/build/hik_camera'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/danny'), ('PYTHONPATH', '/home/danny/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'localhost'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/danny/ros2_ws/install/my_first_sub:/home/danny/ros2_ws/install/my_first_package:/opt/ros/humble')]), 'shell': False}
+[0.065145] (hik_camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098931] (-) TimerEvent: {}
+[0.199460] (-) TimerEvent: {}
+[0.253884] (hik_camera) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.290314] (hik_camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.293086] (hik_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.299691] (-) TimerEvent: {}
+[0.300132] (hik_camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.311395] (hik_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.332271] (hik_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.386039] (hik_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.389523] (hik_camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.399939] (-) TimerEvent: {}
+[0.500503] (-) TimerEvent: {}
+[0.601276] (-) TimerEvent: {}
+[0.650017] (hik_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701320] (-) TimerEvent: {}
+[0.775703] (hik_camera) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.801535] (-) TimerEvent: {}
+[0.852985] (hik_camera) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.866571] (hik_camera) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.901724] (-) TimerEvent: {}
+[0.917560] (hik_camera) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.12 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[0.941236] (hik_camera) StdoutLine: {'line': b'-- Found Hikvision MVS SDK: /opt/MVS/include, /opt/MVS/lib/64/libMvCameraControl.so\n'}
+[0.941692] (hik_camera) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.001980] (-) TimerEvent: {}
+[1.102671] (-) TimerEvent: {}
+[1.124297] (hik_camera) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.124952] (hik_camera) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/danny/hik_ros2_task4/src/hik_camera/include\n'}
+[1.125242] (hik_camera) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.125690] (hik_camera) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.126586] (hik_camera) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.127295] (hik_camera) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.129124] (hik_camera) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.129578] (hik_camera) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.130016] (hik_camera) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.131606] (hik_camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.202922] (-) TimerEvent: {}
+[1.284034] (hik_camera) StdoutLine: {'line': b'-- Generating done\n'}
+[1.303157] (-) TimerEvent: {}
+[1.303747] (hik_camera) StdoutLine: {'line': b'-- Build files have been written to: /home/danny/hik_ros2_task4/build/hik_camera\n'}
+[1.366962] (hik_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hik_camera_node\x1b[0m\n'}
+[1.400727] (hik_camera) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/hik_camera_node.dir/src/hik_camera_node.cpp.o\x1b[0m\n'}
+[1.401687] (hik_camera) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/hik_camera_node.dir/src/main.cpp.o\x1b[0m\n'}
+[1.403341] (-) TimerEvent: {}
+[1.503868] (-) TimerEvent: {}
+[1.604301] (-) TimerEvent: {}
+[1.704746] (-) TimerEvent: {}
+[1.805188] (-) TimerEvent: {}
+[1.905541] (-) TimerEvent: {}
+[2.005975] (-) TimerEvent: {}
+[2.106374] (-) TimerEvent: {}
+[2.206798] (-) TimerEvent: {}
+[2.307224] (-) TimerEvent: {}
+[2.407660] (-) TimerEvent: {}
+[2.508026] (-) TimerEvent: {}
+[2.608455] (-) TimerEvent: {}
+[2.708899] (-) TimerEvent: {}
+[2.809301] (-) TimerEvent: {}
+[2.909735] (-) TimerEvent: {}
+[3.010183] (-) TimerEvent: {}
+[3.110616] (-) TimerEvent: {}
+[3.211076] (-) TimerEvent: {}
+[3.311536] (-) TimerEvent: {}
+[3.412101] (-) TimerEvent: {}
+[3.512689] (-) TimerEvent: {}
+[3.613337] (-) TimerEvent: {}
+[3.713996] (-) TimerEvent: {}
+[3.814700] (-) TimerEvent: {}
+[3.915369] (-) TimerEvent: {}
+[4.016031] (-) TimerEvent: {}
+[4.116582] (-) TimerEvent: {}
+[4.217248] (-) TimerEvent: {}
+[4.317925] (-) TimerEvent: {}
+[4.418553] (-) TimerEvent: {}
+[4.519249] (-) TimerEvent: {}
+[4.619706] (-) TimerEvent: {}
+[4.720253] (-) TimerEvent: {}
+[4.820715] (-) TimerEvent: {}
+[4.921275] (-) TimerEvent: {}
+[5.021929] (-) TimerEvent: {}
+[5.122301] (-) TimerEvent: {}
+[5.222663] (-) TimerEvent: {}
+[5.323005] (-) TimerEvent: {}
+[5.423350] (-) TimerEvent: {}
+[5.523836] (-) TimerEvent: {}
+[5.624342] (-) TimerEvent: {}
+[5.724772] (-) TimerEvent: {}
+[5.825154] (-) TimerEvent: {}
+[5.925502] (-) TimerEvent: {}
+[6.025957] (-) TimerEvent: {}
+[6.126323] (-) TimerEvent: {}
+[6.226689] (-) TimerEvent: {}
+[6.327044] (-) TimerEvent: {}
+[6.427436] (-) TimerEvent: {}
+[6.527950] (-) TimerEvent: {}
+[6.628504] (-) TimerEvent: {}
+[6.729046] (-) TimerEvent: {}
+[6.829555] (-) TimerEvent: {}
+[6.930067] (-) TimerEvent: {}
+[7.030691] (-) TimerEvent: {}
+[7.131326] (-) TimerEvent: {}
+[7.231967] (-) TimerEvent: {}
+[7.332893] (-) TimerEvent: {}
+[7.433659] (-) TimerEvent: {}
+[7.534229] (-) TimerEvent: {}
+[7.634724] (-) TimerEvent: {}
+[7.735310] (-) TimerEvent: {}
+[7.835761] (-) TimerEvent: {}
+[7.936422] (-) TimerEvent: {}
+[8.036918] (-) TimerEvent: {}
+[8.137278] (-) TimerEvent: {}
+[8.237603] (-) TimerEvent: {}
+[8.338019] (-) TimerEvent: {}
+[8.438395] (-) TimerEvent: {}
+[8.538798] (-) TimerEvent: {}
+[8.639262] (-) TimerEvent: {}
+[8.670309] (hik_camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hik_camera_node\x1b[0m\n'}
+[8.739393] (-) TimerEvent: {}
+[8.839743] (-) TimerEvent: {}
+[8.940078] (-) TimerEvent: {}
+[9.040402] (-) TimerEvent: {}
+[9.140807] (-) TimerEvent: {}
+[9.241244] (-) TimerEvent: {}
+[9.341603] (-) TimerEvent: {}
+[9.442024] (-) TimerEvent: {}
+[9.542526] (-) TimerEvent: {}
+[9.643075] (-) TimerEvent: {}
+[9.743555] (-) TimerEvent: {}
+[9.844099] (-) TimerEvent: {}
+[9.944620] (-) TimerEvent: {}
+[10.045182] (-) TimerEvent: {}
+[10.145750] (-) TimerEvent: {}
+[10.246305] (-) TimerEvent: {}
+[10.346883] (-) TimerEvent: {}
+[10.447687] (-) TimerEvent: {}
+[10.548226] (-) TimerEvent: {}
+[10.648590] (-) TimerEvent: {}
+[10.748944] (-) TimerEvent: {}
+[10.849277] (-) TimerEvent: {}
+[10.949597] (-) TimerEvent: {}
+[11.049973] (-) TimerEvent: {}
+[11.150308] (-) TimerEvent: {}
+[11.250628] (-) TimerEvent: {}
+[11.350938] (-) TimerEvent: {}
+[11.451306] (-) TimerEvent: {}
+[11.551676] (-) TimerEvent: {}
+[11.652073] (-) TimerEvent: {}
+[11.752407] (-) TimerEvent: {}
+[11.794319] (hik_camera) StdoutLine: {'line': b'[100%] Built target hik_camera_node\n'}
+[11.810244] (hik_camera) CommandEnded: {'returncode': 0}
+[11.811864] (hik_camera) JobProgress: {'identifier': 'hik_camera', 'progress': 'install'}
+[11.822638] (hik_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/danny/hik_ros2_task4/build/hik_camera'], 'cwd': '/home/danny/hik_ros2_task4/build/hik_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'danny'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/danny'), ('OLDPWD', '/home/danny/hik_ros2_task4'), ('CHROME_DESKTOP', 'code.desktop'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ZSH', '/home/danny/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('MANAGERPID', '1513'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1657'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/danny/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '87433'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/danny/ros2_ws/install'), ('LOGNAME', 'danny'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:8269'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/home/danny'), ('USERNAME', 'danny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ZSH_ROS2_INSTALL_PATH', '/opt/ros/humble'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/danny/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/danny/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/danny-Legion-Y7000P-IRX9:@/tmp/.ICE-unix/1610,unix/danny-Legion-Y7000P-IRX9:/tmp/.ICE-unix/1610'), ('INVOCATION_ID', 'd884050c09674dcdab1a544908cef55d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/danny/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c1876577f697b2c2.txt'), ('PYTHONSTARTUP', '/home/danny/.config/Code/User/workspaceStorage/6c7bb7d603de6d705c1267f291035126/ms-python.python/pythonrc.py'), ('VSCODE_INJECTION', '1'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1UYDE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3f4c20898b.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/home/danny/ros2_ws/install/my_first_sub:/home/danny/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/danny/hik_ros2_task4/build/hik_camera'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/danny'), ('PYTHONPATH', '/home/danny/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'localhost'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/danny/ros2_ws/install/my_first_sub:/home/danny/ros2_ws/install/my_first_package:/opt/ros/humble')]), 'shell': False}
+[11.831160] (hik_camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.831525] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/lib/hik_camera/hik_camera_node\n'}
+[11.832119] (hik_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/danny/hik_ros2_task4/install/hik_camera/lib/hik_camera/hik_camera_node" to ""\n'}
+[11.832504] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/launch\n'}
+[11.832775] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/launch/real_camera.launch.py\n'}
+[11.833227] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/config\n'}
+[11.833329] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/config/hik_camera_params.yaml\n'}
+[11.833504] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/ament_index/resource_index/package_run_dependencies/hik_camera\n'}
+[11.833607] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/ament_index/resource_index/parent_prefix_path/hik_camera\n'}
+[11.833674] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/environment/ament_prefix_path.sh\n'}
+[11.833738] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/environment/ament_prefix_path.dsv\n'}
+[11.833802] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/environment/path.sh\n'}
+[11.833867] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/environment/path.dsv\n'}
+[11.833930] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/local_setup.bash\n'}
+[11.833995] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/local_setup.sh\n'}
+[11.834060] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/local_setup.zsh\n'}
+[11.834132] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/local_setup.dsv\n'}
+[11.834192] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/package.dsv\n'}
+[11.834255] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/ament_index/resource_index/packages/hik_camera\n'}
+[11.834310] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig.cmake\n'}
+[11.834367] (hik_camera) StdoutLine: {'line': b'-- Up-to-date: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/cmake/hik_cameraConfig-version.cmake\n'}
+[11.834423] (hik_camera) StdoutLine: {'line': b'-- Installing: /home/danny/hik_ros2_task4/install/hik_camera/share/hik_camera/package.xml\n'}
+[11.835637] (hik_camera) CommandEnded: {'returncode': 0}
+[11.852824] (-) TimerEvent: {}
+[11.855843] (hik_camera) JobEnded: {'identifier': 'hik_camera', 'rc': 0}
+[11.856443] (-) EventReactorShutdown: {}
