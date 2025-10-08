@@ -4,7 +4,7 @@
   <name>hik_camera</name>
   <version>0.0.0</version>
   <description>ROS2 driver for Hikvision cameras with real-time parameter control and image streaming</description>
-  <maintainer email="1729048057@qq.com">sen</maintainer>
+  <maintainer email="3224392370@qq.com">sen</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
