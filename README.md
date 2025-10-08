@@ -1,4 +1,4 @@
-# Hikvision Camera ROS2 Driver(Task4)
+# Hikvision Camera ROS2 Driver(Task4)海康威视相机ROS2驱动程序（Task4）
 **该项目为一个用于海康威视工业相机的ROS2功能包，支持实时参数调整和稳定的图像流发布**
 
 已进行线下验收
@@ -19,21 +19,21 @@
 
 
 ### 编译
-```shell
-colcon build 
+```shell   “‘壳
+colcon build    colcon构建   colcon构建
 ```
 
 ### 运行
-```shell
+```shell   “‘壳
 # 环境变量有一些问题（暂未找到原因）临时解决方案
-export LD_LIBRARY_PATH=/opt/MVS/lib/64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt/MVS/lib/64:$LD_LIBRARY_PATH出口LD_LIBRARY_PATH = / opt / MVS / lib / 64: LD_LIBRARY_PATH美元出口LD_LIBRARY_PATH = / opt / MVS / lib / 64: LD_LIBRARY_PATH美元
 # 同时启动相机节点与RViz节点
 source install/setup.zsh
-ros2 launch hik_camera camera.launch.py
+ros2 launch hik_camera camera.launch.pyRos2启动hik_camera camera.launch.py
 ```
 
 ### 动态调整参数
-```shell
+```shell   “‘壳
 # 新建一个终端
 
 # 调整曝光时间
@@ -64,7 +64,7 @@ ros2 param get /hik_camera_node exposure_time
 
 ```shell
 #终端中输入（临时解决）
-export LD_LIBRARY_PATH=/opt/MVS/lib/64 :$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt/MVS/lib/64 :$LD_LIBRARY_PATHexport LD_LIBRARY_PATH=/opt/MVS/lib/64:$LD_LIBRARY_PATH . export LD_LIBRARY_PATH=/opt/MVS/lib/64:$LD_LIBRARY_PATH
 ```
 
 
@@ -79,12 +79,12 @@ export LD_LIBRARY_PATH=/opt/MVS/lib/64 :$LD_LIBRARY_PATH
 
 #### 修改曝光时间前
 
-![本地路径](/home/danny/hik_ros2_task4/image/before_edit.jpg)
+![本地路径](image/before_edit.jpg)
 
 #### 修改曝光时间后
 
-```shell
-ros2 param set /hik_camera_node exposure_time 8000.0
+```shell   “‘壳
+ros2 param set /hik_camera_node exposure_time 8000.0Ros2 param set /hik_camera_node exposure_time 8000.0
 ```
 
-![本地路径](/home/danny/hik_ros2_task4/image/after_edit.jpg)
+![本地路径](image/after_edit.jpg)
