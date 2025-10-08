@@ -75,6 +75,14 @@ export LD_LIBRARY_PATH=/opt/MVS/lib/64 :$LD_LIBRARY_PATHexport LD_LIBRARY_PATH=/
 - /image_raw (sensor_msgs/Image) - 原始图像数据
 - /camera_info (sensor_msgs/CameraInfo) - 相机标定信息
 
+### vscode配置
+
+```shell
+{
+    "cmake.sourceDirectory": "/home/danny/hik_ros2_task4/src/hik_camera"
+}
+```
+
 ### 测试结果
 
 #### 修改曝光时间前
